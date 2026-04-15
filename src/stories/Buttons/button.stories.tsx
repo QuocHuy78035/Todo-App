@@ -36,8 +36,8 @@ export const Playground: Story = {
   }
 };
 
-export const Showcase: Story = {
-  render: () => {
-    return <Button>New template</Button>;
-  }
-};
+// export const Showcase: Story = {
+//   render: () => {
+//     return <Button>New template</Button>;
+//   }
+// };
