@@ -1,7 +1,8 @@
+import { DashboardPage } from "~/pages/DashboardPage";
 import "./App.css";
 
 function App() {
-  return <div className="text-red-400">123</div>;
+  return <DashboardPage />;
 }
 
 export default App;

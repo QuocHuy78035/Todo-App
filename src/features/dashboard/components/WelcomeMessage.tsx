@@ -5,5 +5,5 @@ interface WelcomeMessageProps {
 }
 
 export const WelcomeMessage = ({ userName }: WelcomeMessageProps) => {
-  return <p className={cn("font-bold")}>Welcome back, {userName}👋</p>;
+  return <p className={cn("font-bold text-[20px]")}>Welcome back, {userName}👋</p>;
 };
