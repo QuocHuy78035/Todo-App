@@ -1,6 +1,8 @@
 # Todo App
 
-figma url: https://www.figma.com/design/c59oIkRVmnKkaLkFt3hNBG/To-do-list-dashboard--Freebie---Community-?node-id=0-1&p=f&t=JxAQkOyHzfeHHBJb-0
+figma url:
+https://www.figma.com/design/c59oIkRVmnKkaLkFt3hNBG/To-do-list-dashboard--Freebie---Community-?node-id=0-1&p=f&t=JxAQkOyHzfeHHBJb-0
+https://www.figma.com/design/rXGMLWkjKnwm6DfC4HA1Ae/To-do-List-Web-App-Design--Community-?node-id=398-468&t=9zvLNBeSGcuRIOSS-0
 
 src/
 ├── app/ # App-level setup (Providers, Routes, Global Store)
