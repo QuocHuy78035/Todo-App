@@ -14,7 +14,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const baseStyle = "";
 
 const variantStyle: Record<ButtonVariant, string> = {
-  primary: "bg-[#4B69FF] text-white",
+  primary: "bg-[#1C1D22] text-white",
   secondary: "",
   tertiary: "",
   destructive: ""
