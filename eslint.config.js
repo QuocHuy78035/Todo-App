@@ -29,8 +29,8 @@ export default defineConfig([
         "warn",
         {
           arrowParens: "always",
-          semi: false,
-          trailingComma: "always",
+          semi: true,
+          trailingComma: "none",
           tabWidth: 2,
           endOfLine: "auto",
           useTabs: false,
