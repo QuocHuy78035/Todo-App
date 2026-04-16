@@ -5,4 +5,3 @@ export * from "./DashboardHeader";
 export * from "./DashboardViewLabel";
 export * from "./DashboardAction";
 export * from "./DashboardToolbar";
-export * from "./Divider";
