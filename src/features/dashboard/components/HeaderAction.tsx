@@ -1,5 +1,5 @@
 import { BellOutlined, CalendarOutlined, SearchOutlined } from "@ant-design/icons";
-import { Avatar } from "~/components/Avatar/Avatar";
+import { Avatar } from "~/components/Avatar";
 import { cn } from "~/utils";
 
 export const HeaderAction = () => {
