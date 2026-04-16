@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+
+  --color-bgPrimary: #1C1D22;
+  --color-bgSecondary: #fff;
+
+  --color-bgInProgress: #FFA048;
+
+  --color-textPrimary: #000;
+  --color-textSecondary: #8D8E90;
+
+  --color-borderPrimary: #1C1D22;
+  --color-borderSecondary: #EDEDED;
+}
+
 @font-face {
   font-family: "Exo 2";
   src: url("./assets/fonts/Exo_2/static/Exo2-Regular.ttf") format("truetype");

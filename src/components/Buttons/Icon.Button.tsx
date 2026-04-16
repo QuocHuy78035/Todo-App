@@ -4,14 +4,14 @@ type IconButtonSize = "large" | "medium" | "small";
 type IconButtonVariant = "primary" | "secondary";
 
 interface IconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  icon?: React.ReactNode;
+  icon: React.ReactNode;
   className?: string;
   size?: IconButtonSize;
   variant?: IconButtonVariant;
   disabled?: boolean;
 }
 
-const baseStyle = "rounded-full border-2 border-[#E8E8E9] flex items-center justify-center";
+const baseStyle = "rounded-full border-2 border-borderSecondary flex items-center justify-center";
 
 const variantStyle: Record<IconButtonVariant, string> = {
   primary: "bg-white",

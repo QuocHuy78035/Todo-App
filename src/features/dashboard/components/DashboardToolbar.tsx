@@ -1,7 +1,7 @@
 import { DashboardAction } from "./index";
 import { DashboardViewLabel } from "./DashboardViewLabel";
 import { cn } from "~/utils";
-import { Divider } from "./Divider";
+import { Divider } from "~/components/Divider/Divider";
 
 export const DashboardToolbar = () => {
   return (
@@ -10,7 +10,10 @@ export const DashboardToolbar = () => {
         <DashboardViewLabel />
         <DashboardAction />
       </div>
-      <Divider />
+      <div className="flex mt-2">
+        <Divider bg="borderPrimary" width={144} />
+        <Divider bg="borderSecondary" />
+      </div>
     </>
   );
 };

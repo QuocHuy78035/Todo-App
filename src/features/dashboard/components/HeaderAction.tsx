@@ -9,7 +9,7 @@ export const HeaderAction = () => {
       <BellOutlined />
       <div>
         <CalendarOutlined />
-        <span className={cn("text-[#8D8E90] ml-2 text-[14px]")}>19 May 2022</span>
+        <span className={cn("text-textSecondary font-medium ml-2 text-[14px]")}>19 May 2022</span>
       </div>
       <Avatar src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" />
     </div>
