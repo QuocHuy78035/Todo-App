@@ -6,6 +6,8 @@
   --color-bgSecondary: #fff;
 
   --color-bgInProgress: #FFA048;
+  --color-bgExpired: #FF7879;
+  --color-bgDone: #79D701;
 
   --color-textPrimary: #000;
   --color-textSecondary: #8D8E90;
