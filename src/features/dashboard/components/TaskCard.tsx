@@ -5,6 +5,9 @@ import ProgressIcon from "~/assets/icons/progress.png";
 import MessageIcon from "~/assets/icons/message.png";
 import AttackIcon from "~/assets/icons/attack.png";
 import { ProgressBar } from "~/components/Progress";
+import { useSortable } from "@dnd-kit/react/sortable";
+import type { UniqueIdentifier } from "@dnd-kit/core";
+import { useEffect } from "react";
 
 interface TaskCardProps {
   taskTitle: string;
@@ -16,6 +19,9 @@ interface TaskCardProps {
   isDone?: boolean;
   isExpired?: boolean;
   totalProgress: number;
+  id?: string;
+  index?: number;
+  column: UniqueIdentifier;
 }
 
 export const TaskCard = ({
@@ -27,10 +33,21 @@ export const TaskCard = ({
   numberOfCmt,
   isDone = false,
   totalProgress,
-  isExpired = false
+  isExpired = false,
+  id,
+  index,
+  column
 }: TaskCardProps) => {
+  const { ref, isDragging, isDropTarget } = useSortable({
+    id,
+    index,
+    type: "item",
+    accept: ["item", "column"],
+    group: column
+  });
+
   return (
-    <div className={cn("p-4 border border-borderSecondary rounded-lg")}>
+    <div ref={ref} data-dragging={isDragging} className={cn("p-4 border border-borderSecondary rounded-lg")}>
       <div className={cn("flex justify-between items-center")}>
         <div>
           <p className={cn("font-bold")}>{taskTitle}</p>
